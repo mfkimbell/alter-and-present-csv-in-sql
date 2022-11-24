@@ -21,6 +21,15 @@ def read_query(): This allows for the user to access the data from a database's 
 
 The specific commands being used in SQL are basic. I am taking two tables, and doing a LEFT JOIN on the "Title" column of the books data with the "Title" of the rented books. The data being displayed is Book Title, RentalID (if there is one), and Renter(if there is one). I then create a table from this data and display it. The advantage of doing something like this would be for a user to know exactly which books are being rented, as well as which books are not being rented. With a slight alteration to the code, the user could get a table of all the books without someone renting them. 
 
+This is how I formatted the string I would pass into execute_query() to create the tables:
+
+<img width="288" alt="Screen Shot 2022-11-24 at 1 03 09 AM" src="https://user-images.githubusercontent.com/107063397/203716320-bb047b5c-e17e-4415-9401-1c2f65580d58.png">
+
+To populate the data, I iterated through the dataframe object I created with the csv File. Scalable for large tables:
+
+<img width="624" alt="Screen Shot 2022-11-24 at 1 03 46 AM" src="https://user-images.githubusercontent.com/107063397/203716522-26f69076-73b0-404e-bb65-df69d181fdc9.png">
+
+
 When the Datavase is first run, this is what executes in the terminal:
 
 <img width="857" alt="Screen Shot 2022-11-24 at 12 39 45 AM" src="https://user-images.githubusercontent.com/107063397/203714323-222622ad-431c-4af7-9460-27fdc9f22fba.png">
